@@ -22,13 +22,13 @@ console.log(userAge);
 
 // prezzo del biglietto = €0.21/km
 
-const ticketprice = kilometers * 0.21
+const ticketprice = (kilometers * 0.21).toFixed(2);
 console.log (`ticket price: €${ticketprice}`)
 
 //if else sull'età in modo da scontare o meno il prezzo del biglietto
 
-const minorsprice = ticketprice * 0.8;
-const over65price = ticketprice * 0.6;
+const minorsprice = (ticketprice * 0.8).toFixed(2);
+const over65price = (ticketprice * 0.6).toFixed(2);
 
 if (userAge < 18) {
     console.log (`Il tuo prezzo col 20% di sconto: €${minorsprice}`);
@@ -36,7 +36,5 @@ if (userAge < 18) {
     console.log (`Il tuo prezzo col 40% di sconto: €${over65price}`);
 }
 
-//arrotondamento del prezzo con math.round
 
-minorsprice.toPrecision(2);
-over65price.toPrecision(2);
+
