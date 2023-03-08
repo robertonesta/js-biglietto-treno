@@ -12,3 +12,11 @@
 //usare prompt per chiedere numero km e età del passeggero
 //if else sull'età in modo da scontare o meno il prezzo del biglietto
 //arrotondamento del prezzo con math.round
+
+//usare prompt per chiedere numero km e età del passeggero
+const kilometers = prompt("quanti chilometri compirai?")
+console.log(kilometers);
+
+const userAge = prompt("inserire qui la tua età")
+console.log(userAge);
+
