@@ -20,12 +20,12 @@ console.log(kilometers);
 const userAge = prompt("inserire qui la tua età")
 console.log(userAge);
 
-// prezzo del biglietto = €0.21/km
+// prezzo del biglietto = €0.21/km 
 
 const ticketprice = (kilometers * 0.21).toFixed(2);
 console.log (`ticket price: €${ticketprice}`)
 
-//if else sull'età in modo da scontare o meno il prezzo del biglietto
+//if else sull'età in modo da scontare o meno il prezzo del biglietto (arrotondato fino agli €cent)
 
 const minorsprice = (ticketprice * 0.8).toFixed(2);
 const over65price = (ticketprice * 0.6).toFixed(2);
@@ -36,5 +36,7 @@ if (userAge < 18) {
     console.log (`Il tuo prezzo col 40% di sconto: €${over65price}`);
 }
 
-
-
+const price = document.getElementById("price");
+price.innerHTML = `<p>Km: ${kilometers}</p>
+<p>Età: ${userAge}</p>
+<p>Prezzo: </p>`
