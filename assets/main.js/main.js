@@ -20,3 +20,12 @@ console.log(kilometers);
 const userAge = prompt("inserire qui la tua età")
 console.log(userAge);
 
+// prezzo del biglietto = €0.21/km
+
+const ticketprice = kilometers * 0.21
+console.log (`ticket price: €${ticketprice}`)
+
+
+
+
+
