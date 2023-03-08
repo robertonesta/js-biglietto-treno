@@ -38,4 +38,5 @@ if (userAge < 18) {
 
 //arrotondamento del prezzo con math.round
 
-let roundedprice = Math.round((minorsprice * 100) / 100).toFixed(2);
+minorsprice.toPrecision(2);
+over65price.toPrecision(2);
