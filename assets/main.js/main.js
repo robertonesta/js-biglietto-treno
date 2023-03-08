@@ -33,5 +33,9 @@ const over65price = ticketprice * 0.6;
 if (userAge < 18) {
     console.log (`Il tuo prezzo col 20% di sconto: €${minorsprice}`);
 } else if (userAge >=65) {
-    console.log (`Il tuo prezzo col 40% di sconto: €${over65price}`)
+    console.log (`Il tuo prezzo col 40% di sconto: €${over65price}`);
 }
+
+//arrotondamento del prezzo con math.round
+
+let roundedprice = Math.round((minorsprice * 100) / 100).toFixed(2);
